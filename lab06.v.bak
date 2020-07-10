@@ -1,0 +1,9 @@
+module lect7_q2 (input clk, output led;
+	initial begin;
+		clk = 0
+	end
+	
+	always begin;
+		#1 clk = ~clk
+		led = clk
+endmodule
